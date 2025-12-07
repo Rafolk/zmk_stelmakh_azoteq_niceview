@@ -27,6 +27,27 @@
 };
 
 / {
+    behaviors {
+        ws_left: workspace_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LEFT)>;  // Ctrl+Alt+Left (Linux)
+            // или <&kp LC(LEFT)>;      // Cmd+Left (macOS)
+        };
+        
+        ws_right: workspace_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(RIGHT)>;  // Ctrl+Alt+Right (Linux)
+        };
+    };
+    
+    mouse_buttons {
+        compatible = "zmk,mouse-button-behaviors";
+        button-6 = <&ws_left>;  
+        button-7 = <&ws_right>; 
+    };
+
     // Activate ADJUST layer by pressing raise and lower
 
     conditional_layers {
