@@ -31,14 +31,15 @@
         ws_left: workspace_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LEFT)>;  // Ctrl+Alt+Left (Linux)
-            // или <&kp LC(LEFT)>;      // Cmd+Left (macOS)
+            bindings = <&kp LC(LEFT)>;
+            // <&kp LG(LEFT)>;  // Ctrl+Alt+Left (Linux)
+            // <&kp LC(LEFT)>;  // Cmd+Left (macOS)
         };
         
         ws_right: workspace_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(RIGHT)>;  // Ctrl+Alt+Right (Linux)
+            bindings = <&kp LC(RIGHT)>;  // Cmd+Right (macOS)
         };
     };
     

@@ -21,6 +21,28 @@
 };
 
 / {
+    behaviors {
+        ws_left: workspace_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LEFT)>;
+            // <&kp LG(LEFT)>;  // Ctrl+Alt+Left (Linux)
+            // <&kp LC(LEFT)>;  // Cmd+Left (macOS)
+        };
+        
+        ws_right: workspace_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(RIGHT)>;  // Cmd+Right (macOS)
+        };
+    };
+    
+    mouse_buttons {
+        compatible = "zmk,mouse-button-behaviors";
+        button-6 = <&ws_left>;  
+        button-7 = <&ws_right>; 
+    };
+
     // Activate ADJUST layer by pressing raise and lower
 
     conditional_layers {
@@ -157,7 +179,7 @@
 &kp GRAVE       &kp N1  &kp N2      &kp N3        &kp N4      &kp N5                                    &kp N6     &kp N7         &kp N8     &kp N9         &kp N0    &kp MINUS
 &kp TAB         &kp Q   &kp W       &kp E         &kp R       &kp T                                     &kp Y      &kp U          &kp I      &kp O          &kp P     &kp EQUAL
 &kp LEFT_SHIFT  &kp A   &kp S       &kp D         &kp F       &kp G                                     &kp H      &kp J          &kp K      &kp L          &kp SEMI  &mt RIGHT_SHIFT SQT
-&kp LCTRL       &kp Z   &kp X       &kp C         &kp V       &kp B      &out OUT_TOG    &rgb_ug RGB_TOG  &kp N      &kp M          &kp COMMA  &kp DOT        &kp FSLH  &mt RCTRL BACKSLASH
+&kp LCTRL       &kp Z   &kp X       &kp C         &kp V       &kp B      &kp C_MUTE    &rgb_ug RGB_TOG  &kp N      &kp M          &kp COMMA  &kp DOT        &kp FSLH  &mt RCTRL BACKSLASH
                         &kp ESCAPE  &kp LEFT_GUI  &kp DELETE  &mo LOWER  &kp SPACE     &kp ENTER        &mo RAISE  &kp BACKSPACE  &kp RGUI   &kp RIGHT_ALT
             >;
 

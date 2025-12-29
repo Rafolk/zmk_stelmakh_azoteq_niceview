@@ -4,8 +4,6 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: stelmakhdigital
       url-base: https://github.com/stelmakhdigital
-    - name: kevinpastor
-      url-base: https://github.com/kevinpastor
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -14,8 +12,5 @@ manifest:
     - name: zmk_driver_azoteq
       remote: stelmakhdigital
       revision: master
-    - name: nice-view-elemental
-      remote: kevinpastor
-      revision: main
   self:
     path: config
