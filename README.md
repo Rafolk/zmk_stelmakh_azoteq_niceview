@@ -8,11 +8,11 @@
 
 ## Корпуса для печати
 
-![Full_case_STELMAKH_keyboard_v5](Case/Full_case_STELMAKH_keyboard_v5.3mf)
+![Full_case_STELMAKH_keyboard_v5](Case/STELMAKH_keyboard.png)
 
 Stelmakh корпус (такая же как на фото сверху): (Case/Full_case_STELMAKH_keyboard_v5.3mf)
 
-![Full_case_SOFLE_keyboard_v1.3mf](Case/Full_case_SOFLE_keyboard_v1.3mf)
+![Full_case_SOFLE_keyboard_v1.3mf](Case/SOFLE_keyboard.png)
 
 Sofle V1 корпус: (Case/Full_case_SOFLE_keyboard_v1.3mf)
 
