@@ -14,7 +14,7 @@ Stelmakh корпус (такая же как на фото сверху): (Case
 
 ![Full_case_SOFLE_keyboard_v1.3mf](Case/SOFLE_keyboard.png)
 
-Sofle V1 корпус: (Case/Full_case_SOFLE_keyboard_v1.3mf)
+Sofle V1 корпус: (Case/Full_case_SOFLE_keyboard_v1.3mf) - Стандартная. Как вот в этом репозитории (https://github.com/stelmakhdigital/zmk_sofle_niceview)
 
 ## Схема клавиш
 
